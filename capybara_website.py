@@ -1,8 +1,9 @@
 import time
-import pyttsx3
+#import pyttsx3
 from flask import Flask, render_template
 
-website=Flask(__name__)
+website=Flask(__name__,static_url_path='/static/')
+
 @website.route('/')
 def input_content():
     #language = input('pls input your wish: ')
